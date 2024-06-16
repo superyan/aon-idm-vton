@@ -5,7 +5,7 @@
 
 		<div class="container created">
 			<div class="resCon">
-				<img class="res_img" :src="imageUrl" mode=""></img>
+				<img class="res_img" :src="imageUrl" mode="aspectFit"></img>
 			</div>
 
 			<div class="download">
@@ -75,16 +75,15 @@ onMounted(() => {
 	align-items: center;
 }
 .resCon{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 116.27vw;
-	width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
 }
 .res_img {
-	width: 100%;
-	height: auto;
-	max-height: 116.27vw;
+    width: 100%;
+    height: auto;
 }
 
 .download {
