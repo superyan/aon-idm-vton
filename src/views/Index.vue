@@ -10,7 +10,7 @@
 				<p>{{ appData.subtitle }}</p>
 			</div>
 			<div class="uni-form-item uni-column">
-				<div class="title">上传图片</div>
+				<div class="title">上传全身图片</div>
 
 				<div class="content">
 					<div class="upload upload-done" v-if="imgUrl">
@@ -39,7 +39,7 @@
 			</div> -->
 
 			<div class="uni-form-item uni-column">
-				<div class="title">选择婚纱模板</div>
+				<div class="title">选择球衣</div>
 				<div class="templateCon" v-if="templateList.length > 0">
 					<div v-for="(item, index) in templateList"
 						:class="`template_item ${Number(item.id) === templateId ? 'templateActive' : ''}`"
@@ -61,7 +61,7 @@
 					<text>-8</text>
 				</div>
 				<button class="submitBtn" @click="formSubmit">
-					<text>生成婚纱照片</text>
+					<text>生成AI照片</text>
 				</button>
 			</div>
 
@@ -181,6 +181,8 @@ const formSubmit = async () => {
 				"garm_img": swapImgUrl.value,
 				"human_img": submitImgUrl.value,
 				"garment_des": prompt.value,
+				"categrory": "upper_body",
+				"crop": "true",
 			}
 		}
   
