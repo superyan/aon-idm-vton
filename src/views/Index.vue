@@ -182,7 +182,7 @@ const formSubmit = async () => {
 				"human_img": submitImgUrl.value,
 				"garment_des": prompt.value,
 				"categrory": "upper_body",
-				"crop": "true",
+				"crop": true,
 			}
 		}
   
