@@ -183,6 +183,7 @@ const formSubmit = async () => {
 				"garment_des": prompt.value,
 				"categrory": "upper_body",
 				"crop": true,
+				"force_dc": False,
 			}
 		}
   
